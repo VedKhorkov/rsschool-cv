@@ -50,4 +50,4 @@ function highAndLow(numbers){
 
  * 1987-1992 *Sevastopol State Technical University, Department of radio engineering \ microelectronics*
 
- -------
+-------
