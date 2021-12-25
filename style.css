@@ -21,11 +21,6 @@ a {
   border-right: 5px solid rgb(177, 171, 171);
   
 }
-.aside{
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background-color: #686767;
-}
 .menu__item{
   display: grid;
   grid-auto-flow: column;
@@ -82,6 +77,14 @@ a {
 .header{
   border-top: 2px solid rgb(177, 171, 171);
 }
+.aside{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #686767;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 1150px) {
   .wrapper{
     grid-template-columns: 30vw 68vw;
