@@ -43,9 +43,15 @@
         <section>
           <h2 class="title__main" id="codeexample">Code Example</h2>
           <pre class="code_box">
-            function highAndLow(numbers){
-            let numbersArray = numbers.split(' ')
-            return String(Math.max(...numbersArray)) + ' ' + String(Math.min(...numbersArray));}
+            function createPicLeft() { 
+            let img = document.createElement('img');
+            img.src = arrayPic[0];
+            img.classList.add('slide_left');
+            img.alt = 'slide';
+            img.style.left = withPic * 0 - withPic + 'px';
+            document.querySelector('#slide').appendChild(img)
+            };
+            createPicLeft();
           </pre>
           <hr class="line-main">
         </section>
@@ -86,9 +92,39 @@
           </div>
           <hr class="line-main">
         </section>
+        <section>
+          <h2 class="title__main" id="education">Education</h2>
+          <ul class="text__main">
+            <li>2021 <span class="ital"> RS School, JS/Front-end</span>
+            </li>
+            <li>1987-1992 <span class="ital"> Sevastopol State Technical University, Department of radio
+                engineering
+                \
+                microelectronics</span></li>
+          </ul>
+          <hr class="line-main">
+        </section>
 
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+
+
+        <div>
+          <a href="http://github.com/VedKhorkov/" target="blank"><img
+              src="https://img.icons8.com/fluency/36/000000/github.png" alt="git_link" /></a>
+        </div>
+
+
+        <div>
+          <a href="http://rs.school/js/" target="blank"><img
+              src="https://img.icons8.com/ios/36/000000/javascript--v1.png" alt="rss_course_link" /></a>
+        </div>
+
+        <div class="year"><img src="https://img.icons8.com/pastel-glyph/38/000000/new-year-2021--v2.png"
+            alt="2021year" />
+        </div>
+
+      </footer>
     </section>
 
     <aside class="aside">
