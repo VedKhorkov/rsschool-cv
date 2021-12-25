@@ -12,10 +12,56 @@
 <body class="body">
   <div class="wrapper">
     <section class="sect-main">
+
       <header class="header">
-        <nav></nav>
+        <nav class="menu">
+          <ul class="menu__item">
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#high">Skill Highlights</a></li>
+            <li><a href="#codeexample">Code Example</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+          <hr class="line-main">
+        </nav>
+
+        <h1 class="name">Viacheslav Khorkov</h1>
+        <hr class="line-main">
       </header>
-      <main class="main"></main>
+
+      <main class="main">
+        <section>
+          <h2 class="title__main" id="high">Skill Highlights</h2>
+          <ul class="text__main">
+            <li class="no_type">HTML/ CSS (SASS, Bootstrap)</li>
+            <li class="no_type">JavaScript</li>
+            <li class="no_type">Git</li>
+          </ul>
+          <hr class="line-main">
+        </section>
+        <section>
+          <h2 class="title__main" id="codeexample">Code Example</h2>
+          <pre class="code_box">
+            function highAndLow(numbers){
+            let numbersArray = numbers.split(' ')
+            return String(Math.max(...numbersArray)) + ' ' + String(Math.min(...numbersArray));}
+          </pre>
+          <hr class="line-main">
+        </section>
+        <section>
+          <h2 class="title__main" id="aboutme">Additional Information</h2>
+          <p class=" ital text__main text-indiffer">Hard-working, patient and scrupulous .
+            Keen on studying new things all the time <br>
+            Able to work on my own.
+            Ready to work flexible or undefined hours,
+            and be responsible for carrying out the tasks.
+            Excited to carry out logical tasks and enjoy the creative process</p>
+
+          <hr class="line-main">
+        </section>
+
+      </main>
       <footer class="footer"></footer>
     </section>
 

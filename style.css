@@ -1,3 +1,89 @@
-body{
-  background: rgb(148, 138, 138);
+.body{
+  background-color: rgb(228, 222, 222);
+  font-family: 'Montserrat', sans-serif; 
+}
+a :active, 
+a :hover,  
+a {
+  text-decoration: none;
+  color: #666;
+} 
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 350px) minmax(auto, 800px) 1fr;
+  grid-template-rows: 40px 1fr 50px; 
+}
+.sect-main{
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: white;
+}
+.aside{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #686767;
+}
+.menu__item{
+  display: grid;
+  grid-auto-flow: column;
+  font-size: 1.2em;
+  list-style-type: none;
+ 
+}
+.menu__item :hover{
+ color: rgb(31, 30, 30);
+ font-weight: 700;
+ text-transform: uppercase;  
+}
+.line-main{
+  width: 95%;
+}
+.name {
+  text-align: center;
+  font-size: 2.8em;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title__main {
+  text-align: center;
+  font-size: 1.8em;
+  padding-top: 10px;
+}
+.text__main {
+  font-size: 1.3em;
+}
+.ital{
+  font-style: italic;
+}
+.text-indiffer{
+  display: inline-block;
+  padding-left: 1.5em;
+  padding-right: 1em;
+}
+@media (max-width: 1150px) {
+  .wrapper{
+    grid-template-columns: 30vw 68vw;
+    grid-template-rows:  1fr ; 
+  }
+  .sect-main{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .aside{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .menu__item :hover{
+    font-weight: 400;
+    text-transform: none; 
+  }
+
+}
+@media (max-width: 950px){
+  .menu{
+    display: none;
+  }
 }
