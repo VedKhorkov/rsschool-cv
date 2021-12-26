@@ -14,6 +14,11 @@ a {
   grid-template-columns: 1fr minmax(auto, 350px) minmax(auto, 800px) 1fr;
   grid-template-rows: 40px 1fr 50px; 
 }
+.job-title__header,
+.soft-skills,
+.logo-rss__main{
+  display: none;
+}
 .sect-main{
   grid-column: 3 / 4;
   grid-row: 2 / 3;
@@ -43,7 +48,6 @@ a {
 .main {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 .title__main {
   text-align: center;
@@ -161,13 +165,14 @@ a {
 }
 @media (max-width: 950px){
   .wrapper{
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr ;
   }
   .sect-main,
   .aside{
     grid-row: 1 / 2;
   }
-  .menu{
+  .aside{
     display: none;
   }
   .code_box{
@@ -177,8 +182,47 @@ a {
     max-width: 200px;
     height: auto;
   }
-  .logo-rss{
-    width: 150px;
-    height: 75px;
+  .logo-rss__main{
+    display: block;
+    width: 80px;
+    height: 40px;
+    background-image: url(https://rs.school/images/rs_school_js.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .job-title__header{
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: -25px;
+  }
+  .soft-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contact,
+  .lang {
+    width: 45vw;
+  }
+  .contact a {
+    color: black;
+  }
+  .title__aside{
+    font-size: 1.3em
+  }
+  .text__aside {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 750px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 450px){
+  .code_box {
+    font-size: 0.7em;
   }
 }
